@@ -9,7 +9,7 @@ mypath="Path:/To/Parent/Directory" # Paste your path here!
 print(mypath)
 os.chdir(mypath)
 os.system("dir /s /b > myfile.txt")
-os.system("notepad "+"myfile.txt")
+#os.system("notepad "+"myfile.txt")
 with open(mypath+"myfile.txt") as f:
     for line in f:
         if line.endswith(".ipynb\n"):
